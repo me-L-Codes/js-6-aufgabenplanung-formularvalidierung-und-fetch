@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aufgaben Planung</title>
+        <script src="aufgabenPlanung.js" defer></script>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 50px;
+                background-color: #ff7b0028;
+            }
+
+            form {
+                max-width: 400px;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #00000097;
+                border-radius: 5px;
+                background-color: #ff000045;
+            }
+            input, select, button {
+                width: 95%;
+                margin: 10px 0;
+                padding: 8px;
+            }
+            .error {
+                color: red;
+                font-size: 14px;
+                display: block;
+                margin-bottom: 10px;
+                min-height: 18px;
+            }
+
+            ul#taskList {
+                list-style-type: none;
+                padding: 0;
+                margin: 20px auto;
+                width: 80%;
+                max-width: 600px;
+            }
+            ul#taskList li {
+                background-color: #f9f9f9;
+                border: 1px solid #ddd;
+                padding: 15px;
+                margin-bottom: 12px;
+                border-radius: 8px;
+                transition: background-color 0.3s, box-shadow 0.3s;
+            }
+            ul#taskList li:hover {
+                background-color: #f1f1f1;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        </style>    
+    </head>
+    <body>
+        <h1>Teilprüfung 6 </h1>
+        <hr>
+
+        <h2>Aufgabe erstellen</h2>
+
+         <!-- Formular zur Erstellung einer Aufgabe -->
+        <form id="taskForm">
+            <label for="taskDescription">Aufgabenbeschreibung:</label>
+            <input type="text" id="taskDescription" name="taskDescription">
+            <span class="error" id="descError"></span>
+    
+            <label for="dueDate">Fälligkeitsdatum:</label>
+            <input type="date" id="dueDate" name="dueDate">
+            <span class="error" id="dateError"></span>
+    
+            <label for="priority">Priorität:</label>
+            <select id="priority" name="priority">
+                <option value="">Bitte auswählen</option>
+                <option value="hoch">Hoch</option>
+                <option value="mittel">Mittel</option>
+                <option value="niedrig">Niedrig</option>
+            </select>
+            <span class="error" id="priorityError"></span>
+    
+            <button type="submit">Aufgabe hinzufügen</button>
+        </form>
+    
+        <!-- Liste der Aufgaben -->
+        <ul id="taskList"></ul>        
+                
+    </body>
+</html>
