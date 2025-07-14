@@ -1,16 +1,7 @@
-# JS_6
-
-
-
-#to-do's: 
-- Text unterhalb der Teilprüfugn anpassen (Worum ging es im groben)
-  
-
-
-# Teilprüfung 2 – XXXXXXXXXXXXX
+# Teilprüfung 6 – Aufgabenplanung mit Formularvalidierung und async-api
 
 Dies ist eine Prüfungsaufgabe aus meiner Weiterbildung zur Webentwicklerin.  
-Ziel war es, XXXXXXXXXXXXXXXXXXXXXXXXXXX
+Ziel war es, eine Aufgabenverwaltung zu entwickeln, die Eingaben validiert, dynamisch Listen erzeugt und Daten asynchron per Fetch-API an einen Server sendet. Dabei kamen moderne JavaScript-Techniken wie async/await, DOM-Manipulation und Formularvalidierung zum Einsatz.
 
 
 
